@@ -1,6 +1,13 @@
-function Button() {
+function Button(props) {
+
+    
+    const handleClick = () => {
+        alert('クリックされました！');
+    }
+
+
     return (
-        <button type="button">
+        <button type="button" onClick={handleClick}>
             <i>icon</i>
             <span>クリック</span>
         </button>
