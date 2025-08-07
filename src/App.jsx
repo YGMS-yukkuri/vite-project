@@ -5,10 +5,16 @@ import Button from './button'
 function App() {
   const [count, setCount] = useState(0)
 
+  const handleClick = () => {
+    console.log("button clicked");
+  }
+
   return (
     <>
       <h1>Hello World!!</h1>
-      <Button />
+      <Button type="submit" onclick={handleClick}>
+        <span>クリック</span>
+      </Button>
     </>
   )
 }

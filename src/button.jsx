@@ -1,15 +1,12 @@
 function Button(props) {
 
     
-    const handleClick = () => {
-        alert('クリックされました！');
-    }
+    const { type, disabled, children, onclick } = props;
 
 
     return (
-        <button type="button" onClick={handleClick}>
-            <i>icon</i>
-            <span>クリック</span>
+        <button type={type} disabled={disabled} onClick={onclick}>
+            {children}
         </button>
     )
 }
