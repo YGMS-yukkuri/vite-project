@@ -9,12 +9,6 @@ function App() {
   const handleClick = () => {
     setCount(count + 1);
   };
-  useEffect(() => {
-    console.log(`count:`, count)
-    if (count > 15) {
-      setCount(0);
-    }
-  }, [count])
 
   return (
     <>
